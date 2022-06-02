@@ -44,7 +44,7 @@ class Service {
         const dapp = {
             name: i18n.t("title"),
             contractAddress: new Config().address,
-            github: "https://github.com/conspay/coinhi",
+            github: "https://github.com/conspay/coinf",
             author: "conspay",
             url: window.location.origin+window.location.pathname,
             logo: window.location.origin+window.location.pathname +"assets/icon/icon.png",
