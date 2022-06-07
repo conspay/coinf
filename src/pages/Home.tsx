@@ -467,7 +467,7 @@ class Home extends React.Component<State, any>{
                 this.toast(i18n.t("lessBalance"))
                 return
             }
-            const amt = selectedProxyCoin===coink?new BigNumber(amountProxy).multipliedBy(8).dividedBy(100):new BigNumber(amountProxy).multipliedBy(new BigNumber(radio[1])).multipliedBy(8).dividedBy(100).dividedBy(new BigNumber(radio[0]));
+            const amt = selectedProxyCoin===coink?new BigNumber(amountProxy).multipliedBy(20).dividedBy(100):new BigNumber(amountProxy).multipliedBy(new BigNumber(radio[1])).multipliedBy(20).dividedBy(100).dividedBy(new BigNumber(radio[0]));
             contract.investProxy(account,address,toValue(amt.toFixed(18)),selectedProxyCoin,toValue(amt.toFixed(18))).then(hash=>{
                 this.toast(hash)
                 this.setShowModalProxy(false)
@@ -979,7 +979,7 @@ class Home extends React.Component<State, any>{
 
                             <IonItem  mode="ios">
                                 <IonLabel  position="stacked">{i18n.t("amount")}({selectedProxyCoin})</IonLabel>
-                                <IonText>{selectedProxyCoin===coink?new BigNumber(amountProxy?amountProxy:"0").multipliedBy(20).dividedBy(100).toString(10):new BigNumber(amountProxy?amountProxy:"0").multipliedBy(new BigNumber(radio[1])).multipliedBy(8).dividedBy(100).dividedBy(new BigNumber(radio[0])).toString(10)}</IonText>
+                                <IonText>{selectedProxyCoin===coink?new BigNumber(amountProxy?amountProxy:"0").multipliedBy(20).dividedBy(100).toString(10):new BigNumber(amountProxy?amountProxy:"0").multipliedBy(new BigNumber(radio[1])).multipliedBy(20).dividedBy(100).dividedBy(new BigNumber(radio[0])).toString(10)}</IonText>
                             </IonItem>
 
 
