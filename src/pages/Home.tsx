@@ -773,26 +773,6 @@ class Home extends React.Component<State, any>{
                                                 <IonButton onClick={()=>this.takeVipReward()}>{i18n.t("getReward")}</IonButton>:""
                                         }
                                     </IonItem>
-
-                                    <IonItemDivider mode="ios">{i18n.t("dayAuction")}</IonItemDivider>
-                                    <IonItem  mode="ios" lines="none">
-                                        {/*<IonIcon icon={serverOutline} style={{color:"#fad579"}} slot="start"/>*/}
-                                        <IonLabel><span className="text-small">{i18n.t("rewardPool")}</span></IonLabel>
-                                        <IonBadge color="danger">
-                                            {winnersInfo && fromValue(winnersInfo.nowShareRewardPool).toFixed(4,1)} SERO
-                                        </IonBadge>
-                                    </IonItem>
-                                    <IonItem  mode="ios" lines="none">
-                                        {/*<IonIcon icon={serverOutline} style={{color:"#fad579"}} slot="start"/>*/}
-                                        <IonLabel><span className="text-small">{i18n.t("todayReward")}</span></IonLabel>
-                                        <IonBadge color="danger" className="text-small">
-                                            {detail && detail.code && winnersInfo && winnersInfo.topSixCodes.indexOf(detail.code)>-1?fromValue(winnersInfo.topSixRewards[winnersInfo.topSixCodes.indexOf(detail.code)]).toFixed(4,1):i18n.t("notTheTop")}
-                                        </IonBadge>
-                                        {
-                                            winnersInfo && fromValue(winnersInfo.vipReward).comparedTo(0)>0?
-                                                <IonButton onClick={()=>this.takeVipReward()}>{i18n.t("getRewark")}</IonButton>:""
-                                        }
-                                    </IonItem>
                                     <IonButton mode="ios" size="small" onClick={()=>{this.setShowModalDetail(true)}} color="dark" expand="block">{i18n.t("detail")}</IonButton>
                                 </div>
 
