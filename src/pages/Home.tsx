@@ -20,7 +20,7 @@ import i18n from '../common/i18n'
 
 const seropp = require('sero-pp');
 const QRCode = require('qrcode')
-const coink = "COINX1";
+const coink = "COINX2";
 
 
 const options: Options = {
@@ -773,7 +773,6 @@ class Home extends React.Component<State, any>{
                                                 <IonButton onClick={()=>this.takeVipReward()}>{i18n.t("getReward")}</IonButton>:""
                                         }
                                     </IonItem>
-                                    <IonButton mode="ios" size="small" onClick={()=>{this.setShowModalDetail(true)}} color="dark" expand="block">{i18n.t("detail")}</IonButton>
                                 </div>
 
                             </IonList>
