@@ -1,6 +1,6 @@
 export default class Config {
 
-    address:string ="2gLc9sZuqxjJk9tk2T3MGQ9WQmMxo1Uv5qpZhVedWp3WLq7CSdQcuk4M55tX1Rm8Q7x99MZymNRQEsjqq6UBJ8yF"
+    address:string ="615F3K7NtAsgSeyHfjbF5bVnM3sTJgRqnJ5kMomXAp7eSWCYVU8nF8jEmRZpoyuqFjFBWQSUsXjHsVRthEVPck9R"
 
     abi:any = [
         {

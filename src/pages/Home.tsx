@@ -20,7 +20,7 @@ import i18n from '../common/i18n'
 
 const seropp = require('sero-pp');
 const QRCode = require('qrcode')
-const coink = "COINX2";
+const coink = "COINF";
 
 
 const options: Options = {
@@ -860,11 +860,6 @@ class Home extends React.Component<State, any>{
                                 {/*<IonIcon icon={serverOutline} style={{color:"#fad579"}} slot="start"/>*/}
                                 <IonLabel><span className="text-small">{i18n.t("dayIncome")}</span></IonLabel>
                                 <IonBadge className="text-small" color="medium">{detail && detail.dayIncome.toFixed(4,1)}</IonBadge>
-                            </IonItem>
-
-                            <IonItemDivider mode="ios">{i18n.t("contractAddress")}</IonItemDivider>
-                            <IonItem  mode="ios">
-                                <IonText style={{wordBreak:"break-all",width:"100%"}}  onClick={()=>{copy(contract.contract.address);this.toast(i18n.t("copySuccess"))}}><small>{contract.contract.address}</small> <IonIcon icon={copyOutline}/></IonText>
                             </IonItem>
 
                         </IonList>
