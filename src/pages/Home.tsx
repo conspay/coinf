@@ -20,7 +20,7 @@ import i18n from '../common/i18n'
 
 const seropp = require('sero-pp');
 const QRCode = require('qrcode')
-const coink = "COINF3";
+const coink = "COINY";
 
 
 const options: Options = {
